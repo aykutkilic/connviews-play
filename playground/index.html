@@ -1,0 +1,7 @@
+<!doctype html><meta charset="utf-8"><title>connviews</title>
+<p>The playground is now the app's Examples: <a href="../">open the app</a>.</p>
+<script>
+const examples = {"turbojet":"views/turbojet","braids":"views/braids","layers":"views/layers","placement":"views/placement","uml":"showcase/notations/uml-components-inspection-terminal","classes":"views/classes","acausal":"showcase/notations/acausal-model-dc-motor-drive","bond":"showcase/notations/bond-graph-motor-with-a-flexible-coupling","blocks":"showcase/simulation/signal-sources","neural":"showcase/neural-networks/character-transformer-gpt","toolboxes":"showcase/toolboxes/image-processing","raft":"views/raft","protocols":"showcase/protocols/drone-link","plots":"views/plots","status":"views/status","parameters":"views/parameters","large":"views/large","stress":"views/stress","minimal":"views/minimal"};
+const id = examples[location.hash.slice(1)] ?? "views/turbojet";
+location.replace("../#example/" + id);
+</script>
